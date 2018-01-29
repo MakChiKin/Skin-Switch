@@ -1,0 +1,812 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.redFont{
+    color: #f50 !important;
+}
+.colorFont{
+    color: #0aa770 !important;
+}
+.colorFont:hover{
+    text-decoration: underline !important;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    min-width: 1250px;
+    background: rgba(255,255,255,1);
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(252,252,252,0.2);
+    border-bottom: 1px solid rgba(204,204,204,0.2);
+    position: relative;
+    top:0;
+    left: 0;
+    /*opacity: 0.2;*/
+}
+.header-page-width{
+    width: 1190px;
+    height: 60px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+.header_inner{
+    position: relative;
+    padding:0 0 0 205px;
+    height: 61px;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+.header-item-logoArea{
+    display: inline;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.header-item-logoArea img{
+    width: 168px;
+    height: 60px;
+}
+.header-item-left{
+    width: 463px;
+    height: 60px;
+    float: left;
+    /*background: blue;*/
+    display: inline;
+
+}
+.weather_areas{
+    width: 215px;
+    height: 60px;
+    float: left;
+}
+
+.header-item-left div a{
+    text-decoration-line: none;
+    color: #999;
+    line-height: 60px;
+}
+.header-item-left a span,.header-item-left a i{
+    margin: 0 7px 0 7px;
+}
+#airQuality{
+    width: 16px;
+    height: 16px;
+    background: url("../img/xuebi.png") 0 -759px no-repeat;
+    position: absolute;
+    top: 21px;
+    left: 238px;
+}
+#weatherIcon{
+    width: 23px;
+    height: 23px;
+    background: url("../img/tianqi.png") 0 0px no-repeat;
+    background-size: 23px;
+    position: absolute;
+    top: 18px;
+    left: 264px;
+}
+#weatherCondition{
+    margin-left: 60px;
+}
+
+.dateAndTime{
+    width: 170px;
+    height: 60px;
+    float: left;
+
+}
+.horoscope{
+    width: 74px;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+
+.header-item-right{
+    width: 371px;
+    height: 60px;
+    float: right;
+
+}
+.header-item-right div a{
+      text-decoration-line: none;
+      color: #999;
+      line-height: 60px;
+  }
+.header-item-right div a span{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.login{
+    width: 66px;
+    float: left;
+}
+.login a{
+    position: relative;
+    left: 5px;
+}
+#loginIcon{
+    width: 14px;
+    height: 14px;
+    background: url(../img/xuebi.png) 0 -808px no-repeat;
+    position: absolute;
+    top: 24px;;
+}
+
+.network_disk,.email,.skin_peeler{
+    width: 40px;
+    float: left;
+}
+.Phone{
+    width: 52px;
+    float: left;
+}
+.Chinese_football{
+    width: 133px;
+    float: left;
+}
+.weather_areas:hover,.dateAndTime:hover,.horoscope:hover,.login:hover,.network_disk:hover,.email:hover,.skin_peeler:hover,.Chinese_football:hover,.Phone:hover{
+    background: #f7f7f7;
+}
+
+.search-panel-box{
+    width: 100%;
+    height: 82px;
+    position: relative;
+}
+.search-panel-width{
+    width: 1190px;
+    height: 82px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+.search-panel-box-width{
+    width: 862px;
+    height: 72px;
+    margin: 0px auto 0;
+    position: relative;
+    top: 10px;
+    /*background: green;*/
+}
+.baidu-logo{
+    width: 120px;
+    height: 39px;
+    position: relative;
+    top: 30px;
+    left: -50px;
+}
+.baidu-logo a,.baidu-logo a img{
+    width: 120px;
+    height: 39px;
+
+}
+.searchArea,.searchArea form{
+    width: 660px;
+    height: 46px;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+
+}
+.searchInput{
+    width: 540px;
+    height: 48px;
+    float: left;
+    text-indent: 7px;
+    outline:0;
+    border: 1px solid #575757;
+}
+.searchBtn{
+    width: 116px;
+    height: 50px;
+    float: left;
+    border: 1px solid #575757;
+    border-left: 0;
+    line-height: 50px;
+    text-align: center;
+    font-family: arial;
+    font-size: 16px;
+    color: #222;
+    cursor: pointer;
+    background: linear-gradient(#fff,#e7e7e7);
+    position: relative;
+    outline:0;
+
+}
+.colorPlan{
+    float: right;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    top: -71px;
+    left: 50px;
+}
+.colorPlanGreen,.colorPlanBlue,.colorPlanRed{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    outline: 0;
+    cursor: pointer;
+}
+.colorPlanGreen{
+    border: 1px solid #0aa770;
+    background: #ffffff;
+}
+.colorPlanBlue{
+    border: 1px solid #b0bce0;
+    background: #4181ff;
+}
+.colorPlanRed{
+    border: 1px solid #ff65a8;
+    background: #f8ccc1 ;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.hotsearchCon{
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+.hotsearchCon-width{
+    width: 1000px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.hotsearchCon-box{
+    width: 658px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.hotsearchCon-box ul{
+    width: 658px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: -25px;
+}
+.hotsearchCon-box ul li{
+    list-style: none;
+    float: left;
+    line-height: 20px;
+    margin-right: 25px;
+}
+.searchIcon{
+    width: 15px;
+    height: 15px;
+    background: url("../img/xuebi.png") 0 -834px no-repeat;
+    float: left;
+}
+#searchIcon-li{
+    margin: 5px 5px 0 0 ;
+}
+.hotsearchCon-box ul li a{
+    text-decoration: none;
+    color: #666;
+    font: 12px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+}
+
+.hotsearchCon-box ul li a:hover{
+    text-decoration: underline;
+    color: #f50 ;
+}
+
+.bodyct{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+.bodyct-width{
+    width: 1190px;
+    margin: 0 auto;
+    height: auto;
+}
+.bodyct-header,.bodyct-recommend{
+    width:100%;
+    height: 40px;
+    background: #ffffff;
+}
+.bodyct-header ul{
+    width:100%;
+    height: 40px;
+    border-top: 2px solid #099e6a;
+}
+.bodyct-header ul li,.bodyct-header ul li a{
+    color: #333333;
+    width: 108px;
+    list-style: none;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    background: white;
+    text-decoration: none;
+}
+.bodyct-header ul li a:hover{
+    color: #0aa770;
+}
+.actionColor{
+    background: #0aa770 !important;
+    color: white !important;
+}
+.bodyct-recommend ul{
+    width:100%;
+    height: 40px;
+    border: 1px solid #ade0c1;
+    border-top: 1px solid #eaeaea;
+    list-style: none;
+}
+.bodyct-recommend ul li,.bodyct-recommend ul li a{
+    font-size: 14px;
+    width: 84px;
+    list-style: none;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    background: white;
+    text-decoration: none;
+    color: #333;
+}
+.bodyct-recommend ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.bodyct-recommend ul li span{
+    color: #0aa770;
+}
+
+.mainContent{
+    height: 230px;
+    width: 100%;
+}
+.sidebar_left{
+    width: 280px;
+    height: auto;
+    float: left;
+    margin: 10px 0 0 0;
+}
+.sidebar_left_box{
+    width: 280px;
+    height: 156px;
+    border: 1px solid #cecece;
+    background: white;
+}
+.sidebar_left_box ul{
+    float: left;
+    list-style: none;
+}
+.sidebar_left_box ul li{
+    margin: 6px 5px 8px 20px;
+}
+.sidebar_left_box ul li a{
+    text-decoration: none;
+    color: #333333;
+    font: 14px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+    margin: 0 2px;
+}
+.sidebar_left_box ul li span{
+    color: #999;
+    height: 2px;
+}
+.sidebar_left_box ul li a:hover{
+    text-decoration: underline;
+    color: #f50 ;
+}
+
+.sidebar_left_box_L{
+
+}
+#slbl01,#slbl02,#slbl03,#slbl04,#slbl05,#slbl06,#slbl07,#slbl08,#slbl09,#slbl10{
+    width: 16px;
+    height: 16px;
+    background: url("../img/xuebi.png") 0 -898px no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+#slbl02{
+    background: url("../img/xuebi.png") 0 -1034px no-repeat;
+}
+#slbl03{
+    background: url("../img/xuebi.png") 0 -927px no-repeat;
+}
+#slbl04{
+    background: url("../img/xuebi.png") 0 -1063px no-repeat;
+}
+#slbl05{
+    background: url("../img/xuebi.png") 0 -955px no-repeat;
+}
+#slbl06{
+    background: url("../img/xuebi.png") 0 -1091px no-repeat;
+}
+#slbl07{
+    background: url("../img/xuebi.png") 0 -982px no-repeat;
+}
+#slbl08{
+    background: url("../img/xuebi.png") 0 -1118px no-repeat;
+}
+#slbl09{
+    background: url("../img/xuebi.png") 0 -1010px no-repeat;
+}
+#slbl10{
+    background: url("../img/xuebi.png") 0 -1144px no-repeat;
+}
+.main_net{
+    width: 900px;
+    height: auto;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.main_net_box_A{
+    width: 900px;
+    height: 230px;
+    border: 1px solid #adb;
+    position: relative;
+    background: #ffffff;
+}
+.main_net_box_A ul{
+    float: left;
+    list-style: none;
+    margin: 10px 30px 0 20px;
+    position: relative;
+    left: 15px;
+}
+.main_net_box_A ul li{
+    margin: 0 0 10px 0;
+}
+.main_net_box_A ul li a{
+    text-decoration: none;
+    color: #333333;
+    font: 14px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+}
+.main_net_box_A ul li a:hover{
+    color: #f50 ;
+}
+.netIocn{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    /*background: blue;*/
+    position: relative;
+    top: 2px;
+}
+.netIocn_sp{
+    width: 34px;
+    height: 30px;
+    /*background: blue;*/
+    position: absolute;
+}
+#mnb_A_01{
+    background: url("../img/xuebi.png") 0 0 no-repeat;
+    background-size: 20px;
+}
+#mnb_A_02{
+    background: url("../img/xuebi.png") 0 -28px no-repeat;
+}
+#mnb_A_03{
+    background: url("../img/xuebi.png") 0 -58px no-repeat;
+}
+#mnb_B_01{
+    background: url("../img/xuebi.png") 0 -107px no-repeat;
+}
+#mnb_B_02{
+    background: url("../img/xuebi.png") 0 -138px no-repeat;
+}
+#mnb_C_02_B{
+    top: 26px;
+    left: 69px;
+    background: url("../img/xuebi02.jpg") 0 0px no-repeat;
+}
+#mnb_B_03{
+    background: url("../img/xuebi.png") 0 -83px no-repeat;
+}
+#mnb_B_04{
+    background: url("../img/xuebi.png") 0 -205px no-repeat;
+}
+#mnb_C_01{
+    background: url("../img/xuebi.png") 0 -235px no-repeat;
+}
+#mnb_C_02{
+    background: url("../img/xuebi.png") 0 -264px no-repeat;
+}
+#mnb_C_03{
+    background: url("../img/xuebi.png") 0 -295px no-repeat;
+}
+#mnb_C_03_B{
+
+    top: 60px;
+    left: 83px;
+    background: url(../img/xuebi.png) 0 -1173px no-repeat;
+}
+#mnb_C_03_C{
+    display: none;
+    top: 60px;
+    left: 83px;
+    background: url(../img/xuebi02.jpg) 0 -168px no-repeat;
+}
+.netIocn_p:hover #mnb_C_03_C{
+    display: block;
+}
+
+#mnb_C_04{
+    background: url("../img/xuebi.png") 0 -333px no-repeat;
+}
+#mnb_C_05{
+    background: url("../img/xuebi.png") 0 -386px no-repeat;
+}
+#mnb_D_01{
+    background: url("../img/xuebi.png") 0 -414px no-repeat;
+}
+#mnb_D_01_B{
+    top: -1px;
+    left: 70px;
+    background: url(../img/xuebi.png) 0 -1173px no-repeat;
+}
+#mnb_D_01_C{
+    display: none;
+    top: -1px;
+    left: 70px;
+    background: url(../img/xuebi02.jpg) 0 -39px no-repeat;
+}
+.netIocn_p:hover #mnb_D_01_C{
+    display: block;
+}
+#mnb_D_02{
+    background: url("../img/xuebi.png") 0 -444px no-repeat;
+}
+#mnb_D_03{
+    background: url("../img/xuebi.png") 0 -474px no-repeat;
+}
+#mnb_D_04{
+    background: url("../img/xuebi.png") 0 -512px no-repeat;
+}
+#mnb_D_05{
+    background: url("../img/xuebi.png") 0 -542px no-repeat;
+}
+#mnb_D_06{
+    top: 151px;
+    left: 78px;
+    background: url(../img/xuebi02.jpg) 0 -79px no-repeat;
+ }
+#mnb_E_01{
+     background: url("../img/xuebi.png") 0 -571px no-repeat;
+ }
+#mnb_E_02{
+    background: url("../img/xuebi.png") 0 -601px no-repeat;
+}
+#mnb_E_03{
+    background: url("../img/xuebi.png") 0 -630px no-repeat;
+}
+#mnb_F_01{
+    background: url("../img/xuebi.png") 0 -663px no-repeat;
+}
+#mnb_F_02{
+    background: url("../img/xuebi.png") 0 -692px no-repeat;
+}
+#mnb_F_03{
+    background: url("../img/xuebi.png") 0 -723px no-repeat;
+}
+#mnb_F_04{
+    top: 90px;
+    left: 90px;
+    background: url(../img/xuebi02.jpg) 0 -120px no-repeat;
+}
+
+.main_net_box_B{
+    width: 100%;
+    height: 32px;
+}
+.main_net_box_B ul{
+    width: 862px;
+    height:32px;
+    float: right;
+    /*margin: 0 auto;*/
+
+    list-style: none;
+}
+.main_net_box_B ul li{
+    float: left;
+    margin: 3px 20px 3px 0;
+}
+.main_net_box_B ul li a{
+    line-height: 32px;
+    color: #3b5998;
+    font: 12px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+    text-decoration: none;
+}
+.main_net_box_B ul li a:hover{
+    text-decoration: underline;
+}
+.main_net_box_C{
+    width: 100%;
+    height: 178px;
+    border: 1px solid #cecece;
+    position: relative;
+    background: white;
+}
+.main_net_box_C ul{
+    float: left;
+    list-style: none;
+    position: relative;
+    left: 30px;
+    margin: 5px 10px 0 0;
+}
+.main_net_box_C ul li{
+    margin: 3px 20px 12px 0;
+}
+.main_net_box_C ul li a{
+    color: #333;
+    font: 14px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+    text-decoration: none;
+}
+.main_net_box_C ul li a:hover{
+    color: #f50 ;
+    text-decoration: underline;
+}
+#hot{
+    position: absolute;
+    top: 6px;
+    left: 79px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/xuebi.png) 0 -1209px no-repeat;
+}
+.siderbar_B_box{
+    width:100%;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #cecece;
+}
+.sbb_nav{
+    width:100%;
+    height: 40px;
+    background: white;
+}
+.sbb_nav ul{
+    list-style: none;
+}
+.sbb_nav ul li,.sbb_nav ul li a{
+    width: 56px;
+    height: 40px;
+    float: left;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    font: 14px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+}
+.sbb_nav ul li a{
+    line-height: 40px;
+}
+.sbb_nav ul li a:hover{
+    color: #0aa770;
+    text-decoration: underline;
+}
+
+.sbb_nav ul li:nth-child(1) a{
+    border-top: 1px solid #0aa770;
+    color: #0aa770;
+}
+.sbb_Carousel{
+    width: 278px;
+    height: 110px;
+    position: relative;
+
+}
+.swiper-container{
+    width:100%;
+    height: 110px;
+    margin: 0 auto;
+}
+.swiper-wrapper{
+    width:278px;
+    height: 110px;
+}
+.swiper-slide{
+    width:278px;
+    height: 110px;
+    text-align: center;
+}
+.swiper-slide a{
+    width: 278px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 82px;
+}
+.swiper-slide i{
+    width: 278px;
+    height: 28px;
+    background:linear-gradient(rgba(20,20,20,0.25),rgba(20,20,20,0.9));
+    position: absolute;
+    top: 82px;
+    left: 0px;
+}
+.newsMsg01{
+    background: url(../img/01.jpg) 0 0 no-repeat;
+}
+.newsMsg02{
+    background: url(../img/02.jpg) 0 0 no-repeat;
+}
+.newsMsg03{
+    background: url(../img/03.jpg) 0 0 no-repeat;
+}
+.newsMsg04{
+    background: url(../img/04.jpg) 0 0 no-repeat;
+}
+.swiper-button-prev,.swiper-button-next{
+    background: rgba(0,0,0,0.65);
+    color: #ffffff;
+    text-align: center;
+    width: 30px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 4px;
+    opacity: 0;
+    -moz-transition:opacity .5s ease-out;
+    -webkit-transition:opacity .5s ease-out;
+    -o-transition:opacity .5s ease-out;
+    -ms-transition:opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+}
+.swiper-container:hover .swiper-button-prev,.swiper-container:hover .swiper-button-next{
+    opacity: 1;
+}
+.Others_msg{
+    width:100%;
+    height: 180px;
+    background: white;
+}
+.Others_msg ul{
+    width: 90%;
+    margin-left: 15px;
+    list-style: none;
+}
+.Others_msg ul li{
+    width: 100%;
+    height: 25px;
+    margin: 5px auto;
+}
+.Others_msg ul li a{
+    color: #333333;
+    text-decoration: none;
+    text-align: left;
+    font: 14px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+}
+.Others_msg ul li a:hover{
+    color: #f50;
+    text-decoration: underline;
+}
+.guessLike{
+    width: 20px;
+    height: 65px;
+    background-color: #0aa770;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    position: absolute;
+    top: 55px;
+    line-height: 13px;
+}
+.guessLike span{
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100;
+    position: relative;
+    top: 3px;
+    left: 4px;
+}
